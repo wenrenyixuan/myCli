@@ -5,10 +5,15 @@ const path = require('path');
 const inquirer = require('inquirer');
 const ejs = require('ejs');
 
+// git add . => git add all
+const test = function() { 
+  console.log('test-commit')
+};
+
 inquirer.prompt([{
   type: 'input',
-  name: 'test-test',
-  message: 'please input your project name ？'
+  name: 'test',
+  message: 'please input your project name'
 }]).then((anwser:object) => {
   const temDir = path.join(__dirname, 'templates');
   const dstDir = process.cwd();
