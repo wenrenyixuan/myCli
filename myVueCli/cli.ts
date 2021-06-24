@@ -7,8 +7,8 @@ const ejs = require('ejs');
 
 inquirer.prompt([{
   type: 'input',
-  name: 'test',
-  message: 'please input your project name'
+  name: 'test-test',
+  message: 'please input your project name ？'
 }]).then((anwser:object) => {
   const temDir = path.join(__dirname, 'templates');
   const dstDir = process.cwd();
